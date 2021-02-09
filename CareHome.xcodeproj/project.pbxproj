@@ -1,0 +1,947 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		169D9D15ED43B7BC20FC8FAE /* Pods_CareHome_CareHomeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0E9570F6A3DF83C5DA685F /* Pods_CareHome_CareHomeUITests.framework */; };
+		30E8EC25FBFEF910ED5233EF /* Pods_CareHomeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF6A4E9BC5ECAF7116A4039 /* Pods_CareHomeTests.framework */; };
+		55058C5B248E66F500C70E2F /* Pods_CareHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55058C5A248E66F500C70E2F /* Pods_CareHome.framework */; };
+		551CE46D23E1E7C60058B313 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551CE46C23E1E7C60058B313 /* DatabaseManager.swift */; };
+		551CE46F23E1EBD00058B313 /* ChangeEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551CE46E23E1EBD00058B313 /* ChangeEmailViewController.swift */; };
+		551CE47323E1F0C20058B313 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551CE47223E1F0C20058B313 /* ProfileViewController.swift */; };
+		55234A9E24758A0200FF10D2 /* ManagePatientAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55234A9D24758A0200FF10D2 /* ManagePatientAccountsViewController.swift */; };
+		55234AA52475936000FF10D2 /* EditPatientAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55234AA42475936000FF10D2 /* EditPatientAccountViewController.swift */; };
+		553CC9962427CDCA007BB544 /* ChooseCompareOpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553CC9952427CDCA007BB544 /* ChooseCompareOpViewController.swift */; };
+		55730346243A2F5D00EDB8FB /* ResultsIndPatientQoLScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55730345243A2F5D00EDB8FB /* ResultsIndPatientQoLScoresViewController.swift */; };
+		5573034D243A4CF400EDB8FB /* AveragePatientQoLScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5573034C243A4CF400EDB8FB /* AveragePatientQoLScoreViewController.swift */; };
+		55730351243A4D7E00EDB8FB /* ResultsAveragePatientScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55730350243A4D7E00EDB8FB /* ResultsAveragePatientScoresViewController.swift */; };
+		55821559235468F200C6AB3A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55821558235468F200C6AB3A /* GoogleService-Info.plist */; };
+		5582155B23546E6A00C6AB3A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5582155A23546E6A00C6AB3A /* LogInViewController.swift */; };
+		558637DA23EC416000F6DFB0 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558637D923EC416000F6DFB0 /* HomePageViewController.swift */; };
+		558637E923EC4C4D00F6DFB0 /* SurveyQoL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558637E823EC4C4D00F6DFB0 /* SurveyQoL.swift */; };
+		558ADD522402E118001E0FEF /* SelectPatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558ADD512402E118001E0FEF /* SelectPatientViewController.swift */; };
+		558ADD542402EE4D001E0FEF /* CreatePatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558ADD532402EE4D001E0FEF /* CreatePatientViewController.swift */; };
+		5598A4F623FEC0AB0039FAFE /* PVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598A4F523FEC0AB0039FAFE /* PVC.swift */; };
+		559BC800235465C9002FC593 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559BC7FF235465C9002FC593 /* AppDelegate.swift */; };
+		559BC802235465C9002FC593 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559BC801235465C9002FC593 /* SceneDelegate.swift */; };
+		559BC807235465C9002FC593 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 559BC805235465C9002FC593 /* Main.storyboard */; };
+		559BC809235465C9002FC593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 559BC808235465C9002FC593 /* Assets.xcassets */; };
+		559BC80C235465C9002FC593 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 559BC80A235465C9002FC593 /* LaunchScreen.storyboard */; };
+		559BC817235465CA002FC593 /* CareHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559BC816235465CA002FC593 /* CareHomeTests.swift */; };
+		559BC822235465CA002FC593 /* CareHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559BC821235465CA002FC593 /* CareHomeUITests.swift */; };
+		55BB19F72433A1F600AF25A8 /* PatientQoLCompareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BB19F62433A1F600AF25A8 /* PatientQoLCompareViewController.swift */; };
+		55BB1A002433BD0000AF25A8 /* ResultsAvgCHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BB19FF2433BD0000AF25A8 /* ResultsAvgCHViewController.swift */; };
+		55C0E3322428D85F004BEB8F /* AvgCareHomeOpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C0E3312428D85F004BEB8F /* AvgCareHomeOpViewController.swift */; };
+		55C1F16D2361FEFC00E62B67 /* RoundedShadowBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1F16C2361FEFC00E62B67 /* RoundedShadowBtn.swift */; };
+		55C7B02E25CD6AFD00F5C788 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55C7B02725CD6AE500F5C788 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55C7B08B25CD6E9000F5C788 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C7B02725CD6AE500F5C788 /* ResearchKit.framework */; };
+		55CD1C0424268E7A0033040C /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CD1C0324268E7A0033040C /* ChartViewController.swift */; };
+		55EC39B02457182200A8ECF3 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EC39AF2457182200A8ECF3 /* HistoryViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		559BC813235465CA002FC593 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 559BC7F4235465C9002FC593 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 559BC7FB235465C9002FC593;
+			remoteInfo = CareHome;
+		};
+		559BC81E235465CA002FC593 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 559BC7F4235465C9002FC593 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 559BC7FB235465C9002FC593;
+			remoteInfo = CareHome;
+		};
+		55C7B02625CD6AE500F5C788 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C7B02025CD6AE500F5C788 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		55C7B02825CD6AE500F5C788 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C7B02025CD6AE500F5C788 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		558637E723EC495300F6DFB0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55C7B02E25CD6AFD00F5C788 /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0B7196647BE1824DB37DC050 /* Pods-CareHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareHome.release.xcconfig"; path = "Target Support Files/Pods-CareHome/Pods-CareHome.release.xcconfig"; sourceTree = "<group>"; };
+		27E45FF658EC80AF862313CE /* Pods-CareHome-CareHomeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareHome-CareHomeUITests.release.xcconfig"; path = "Target Support Files/Pods-CareHome-CareHomeUITests/Pods-CareHome-CareHomeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3A9DDFF5B18395B7D2314512 /* Pods_CareHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C70568C40446AF2D61C79B4 /* Pods-CareHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareHome.debug.xcconfig"; path = "Target Support Files/Pods-CareHome/Pods-CareHome.debug.xcconfig"; sourceTree = "<group>"; };
+		55058C5A248E66F500C70E2F /* Pods_CareHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_CareHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		551CE46C23E1E7C60058B313 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		551CE46E23E1EBD00058B313 /* ChangeEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmailViewController.swift; sourceTree = "<group>"; };
+		551CE47223E1F0C20058B313 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		55234A9D24758A0200FF10D2 /* ManagePatientAccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagePatientAccountsViewController.swift; sourceTree = "<group>"; };
+		55234AA42475936000FF10D2 /* EditPatientAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPatientAccountViewController.swift; sourceTree = "<group>"; };
+		553CC9952427CDCA007BB544 /* ChooseCompareOpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCompareOpViewController.swift; sourceTree = "<group>"; };
+		555FD617247CA4F700E4ACA6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		55730345243A2F5D00EDB8FB /* ResultsIndPatientQoLScoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsIndPatientQoLScoresViewController.swift; sourceTree = "<group>"; };
+		5573034C243A4CF400EDB8FB /* AveragePatientQoLScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AveragePatientQoLScoreViewController.swift; sourceTree = "<group>"; };
+		55730350243A4D7E00EDB8FB /* ResultsAveragePatientScoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsAveragePatientScoresViewController.swift; sourceTree = "<group>"; };
+		55821558235468F200C6AB3A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5582155A23546E6A00C6AB3A /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		558637D923EC416000F6DFB0 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		558637E823EC4C4D00F6DFB0 /* SurveyQoL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyQoL.swift; sourceTree = "<group>"; };
+		558ADD512402E118001E0FEF /* SelectPatientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPatientViewController.swift; sourceTree = "<group>"; };
+		558ADD532402EE4D001E0FEF /* CreatePatientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePatientViewController.swift; sourceTree = "<group>"; };
+		5598A4F523FEC0AB0039FAFE /* PVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVC.swift; sourceTree = "<group>"; };
+		559BC7FC235465C9002FC593 /* CareHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		559BC7FF235465C9002FC593 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		559BC801235465C9002FC593 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		559BC806235465C9002FC593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		559BC808235465C9002FC593 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		559BC80B235465C9002FC593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		559BC80D235465C9002FC593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		559BC812235465CA002FC593 /* CareHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		559BC816235465CA002FC593 /* CareHomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareHomeTests.swift; sourceTree = "<group>"; };
+		559BC818235465CA002FC593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		559BC81D235465CA002FC593 /* CareHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		559BC821235465CA002FC593 /* CareHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareHomeUITests.swift; sourceTree = "<group>"; };
+		559BC823235465CA002FC593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55BB19F62433A1F600AF25A8 /* PatientQoLCompareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientQoLCompareViewController.swift; sourceTree = "<group>"; };
+		55BB19FF2433BD0000AF25A8 /* ResultsAvgCHViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsAvgCHViewController.swift; sourceTree = "<group>"; };
+		55C0E3312428D85F004BEB8F /* AvgCareHomeOpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvgCareHomeOpViewController.swift; sourceTree = "<group>"; };
+		55C1F16C2361FEFC00E62B67 /* RoundedShadowBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowBtn.swift; sourceTree = "<group>"; };
+		55C7B02025CD6AE500F5C788 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../../../../Downloads/ResearchKit-main/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
+		55CD1C0324268E7A0033040C /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		55EC39AF2457182200A8ECF3 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		6B0E9570F6A3DF83C5DA685F /* Pods_CareHome_CareHomeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareHome_CareHomeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EF6A4E9BC5ECAF7116A4039 /* Pods_CareHomeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareHomeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77CFE0EE16C7C7CC1454D69F /* Pods-CareHomeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareHomeTests.release.xcconfig"; path = "Target Support Files/Pods-CareHomeTests/Pods-CareHomeTests.release.xcconfig"; sourceTree = "<group>"; };
+		F1763D6AC81322C68E1F2EE5 /* Pods-CareHomeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareHomeTests.debug.xcconfig"; path = "Target Support Files/Pods-CareHomeTests/Pods-CareHomeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F94B1C51B1602BF2EBEE98B6 /* Pods-CareHome-CareHomeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareHome-CareHomeUITests.debug.xcconfig"; path = "Target Support Files/Pods-CareHome-CareHomeUITests/Pods-CareHome-CareHomeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		559BC7F9235465C9002FC593 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C7B08B25CD6E9000F5C788 /* ResearchKit.framework in Frameworks */,
+				55058C5B248E66F500C70E2F /* Pods_CareHome.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559BC80F235465CA002FC593 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30E8EC25FBFEF910ED5233EF /* Pods_CareHomeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559BC81A235465CA002FC593 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169D9D15ED43B7BC20FC8FAE /* Pods_CareHome_CareHomeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38326FD0F701F8B689819BA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55058C5A248E66F500C70E2F /* Pods_CareHome.framework */,
+				3A9DDFF5B18395B7D2314512 /* Pods_CareHome.framework */,
+				6B0E9570F6A3DF83C5DA685F /* Pods_CareHome_CareHomeUITests.framework */,
+				6EF6A4E9BC5ECAF7116A4039 /* Pods_CareHomeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D05E95BAA91454DE03F9B46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C70568C40446AF2D61C79B4 /* Pods-CareHome.debug.xcconfig */,
+				0B7196647BE1824DB37DC050 /* Pods-CareHome.release.xcconfig */,
+				F94B1C51B1602BF2EBEE98B6 /* Pods-CareHome-CareHomeUITests.debug.xcconfig */,
+				27E45FF658EC80AF862313CE /* Pods-CareHome-CareHomeUITests.release.xcconfig */,
+				F1763D6AC81322C68E1F2EE5 /* Pods-CareHomeTests.debug.xcconfig */,
+				77CFE0EE16C7C7CC1454D69F /* Pods-CareHomeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		559BC7F3235465C9002FC593 = {
+			isa = PBXGroup;
+			children = (
+				555FD617247CA4F700E4ACA6 /* README.md */,
+				55C7B02025CD6AE500F5C788 /* ResearchKit.xcodeproj */,
+				559BC7FE235465C9002FC593 /* CareHome */,
+				559BC815235465CA002FC593 /* CareHomeTests */,
+				559BC820235465CA002FC593 /* CareHomeUITests */,
+				559BC7FD235465C9002FC593 /* Products */,
+				3D05E95BAA91454DE03F9B46 /* Pods */,
+				38326FD0F701F8B689819BA5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		559BC7FD235465C9002FC593 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				559BC7FC235465C9002FC593 /* CareHome.app */,
+				559BC812235465CA002FC593 /* CareHomeTests.xctest */,
+				559BC81D235465CA002FC593 /* CareHomeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		559BC7FE235465C9002FC593 /* CareHome */ = {
+			isa = PBXGroup;
+			children = (
+				55E42AA825D3289C00A397B0 /* Comparison */,
+				55E42AA725D3285900A397B0 /* Profile */,
+				55E42AA625D3284100A397B0 /* Auth */,
+				55E42AA525D3283600A397B0 /* Resources */,
+				55E42AA125D3280600A397B0 /* Questionnaire */,
+				55C1F16B2361FE4C00E62B67 /* View */,
+				559BC7FF235465C9002FC593 /* AppDelegate.swift */,
+				558637D923EC416000F6DFB0 /* HomePageViewController.swift */,
+				559BC801235465C9002FC593 /* SceneDelegate.swift */,
+				559BC805235465C9002FC593 /* Main.storyboard */,
+				559BC808235465C9002FC593 /* Assets.xcassets */,
+				559BC80A235465C9002FC593 /* LaunchScreen.storyboard */,
+				559BC80D235465C9002FC593 /* Info.plist */,
+				55821558235468F200C6AB3A /* GoogleService-Info.plist */,
+			);
+			path = CareHome;
+			sourceTree = "<group>";
+		};
+		559BC815235465CA002FC593 /* CareHomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				559BC816235465CA002FC593 /* CareHomeTests.swift */,
+				559BC818235465CA002FC593 /* Info.plist */,
+			);
+			path = CareHomeTests;
+			sourceTree = "<group>";
+		};
+		559BC820235465CA002FC593 /* CareHomeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				559BC821235465CA002FC593 /* CareHomeUITests.swift */,
+				559BC823235465CA002FC593 /* Info.plist */,
+			);
+			path = CareHomeUITests;
+			sourceTree = "<group>";
+		};
+		55C1F16B2361FE4C00E62B67 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				55C1F16C2361FEFC00E62B67 /* RoundedShadowBtn.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		55C7B02125CD6AE500F5C788 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55C7B02725CD6AE500F5C788 /* ResearchKit.framework */,
+				55C7B02925CD6AE500F5C788 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55E42AA125D3280600A397B0 /* Questionnaire */ = {
+			isa = PBXGroup;
+			children = (
+				55CD1C0324268E7A0033040C /* ChartViewController.swift */,
+				558637E823EC4C4D00F6DFB0 /* SurveyQoL.swift */,
+				558ADD512402E118001E0FEF /* SelectPatientViewController.swift */,
+			);
+			path = Questionnaire;
+			sourceTree = "<group>";
+		};
+		55E42AA525D3283600A397B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				55234AA42475936000FF10D2 /* EditPatientAccountViewController.swift */,
+				55234A9D24758A0200FF10D2 /* ManagePatientAccountsViewController.swift */,
+				558ADD532402EE4D001E0FEF /* CreatePatientViewController.swift */,
+				551CE46C23E1E7C60058B313 /* DatabaseManager.swift */,
+				5598A4F523FEC0AB0039FAFE /* PVC.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		55E42AA625D3284100A397B0 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				5582155A23546E6A00C6AB3A /* LogInViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		55E42AA725D3285900A397B0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				551CE47223E1F0C20058B313 /* ProfileViewController.swift */,
+				551CE46E23E1EBD00058B313 /* ChangeEmailViewController.swift */,
+				55EC39AF2457182200A8ECF3 /* HistoryViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		55E42AA825D3289C00A397B0 /* Comparison */ = {
+			isa = PBXGroup;
+			children = (
+				553CC9952427CDCA007BB544 /* ChooseCompareOpViewController.swift */,
+				55C0E3312428D85F004BEB8F /* AvgCareHomeOpViewController.swift */,
+				55BB19FF2433BD0000AF25A8 /* ResultsAvgCHViewController.swift */,
+				55BB19F62433A1F600AF25A8 /* PatientQoLCompareViewController.swift */,
+				55730345243A2F5D00EDB8FB /* ResultsIndPatientQoLScoresViewController.swift */,
+				5573034C243A4CF400EDB8FB /* AveragePatientQoLScoreViewController.swift */,
+				55730350243A4D7E00EDB8FB /* ResultsAveragePatientScoresViewController.swift */,
+			);
+			path = Comparison;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		559BC7FB235465C9002FC593 /* CareHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 559BC826235465CA002FC593 /* Build configuration list for PBXNativeTarget "CareHome" */;
+			buildPhases = (
+				940B7A0D2E26E353B0CFFB9D /* [CP] Check Pods Manifest.lock */,
+				559BC7F8235465C9002FC593 /* Sources */,
+				559BC7F9235465C9002FC593 /* Frameworks */,
+				559BC7FA235465C9002FC593 /* Resources */,
+				E314466728C6CDA9749361F2 /* [CP] Embed Pods Frameworks */,
+				558637E723EC495300F6DFB0 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CareHome;
+			productName = CareHome;
+			productReference = 559BC7FC235465C9002FC593 /* CareHome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		559BC811235465CA002FC593 /* CareHomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 559BC829235465CA002FC593 /* Build configuration list for PBXNativeTarget "CareHomeTests" */;
+			buildPhases = (
+				3FF336F212A0EBD9C693F37C /* [CP] Check Pods Manifest.lock */,
+				559BC80E235465CA002FC593 /* Sources */,
+				559BC80F235465CA002FC593 /* Frameworks */,
+				559BC810235465CA002FC593 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				559BC814235465CA002FC593 /* PBXTargetDependency */,
+			);
+			name = CareHomeTests;
+			productName = CareHomeTests;
+			productReference = 559BC812235465CA002FC593 /* CareHomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		559BC81C235465CA002FC593 /* CareHomeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 559BC82C235465CA002FC593 /* Build configuration list for PBXNativeTarget "CareHomeUITests" */;
+			buildPhases = (
+				0D1D86C89807B6D532858FEC /* [CP] Check Pods Manifest.lock */,
+				559BC819235465CA002FC593 /* Sources */,
+				559BC81A235465CA002FC593 /* Frameworks */,
+				559BC81B235465CA002FC593 /* Resources */,
+				961D2EF4EC55F77B724FFA23 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				559BC81F235465CA002FC593 /* PBXTargetDependency */,
+			);
+			name = CareHomeUITests;
+			productName = CareHomeUITests;
+			productReference = 559BC81D235465CA002FC593 /* CareHomeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		559BC7F4235465C9002FC593 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = OscarSanz;
+				TargetAttributes = {
+					559BC7FB235465C9002FC593 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					559BC811235465CA002FC593 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 559BC7FB235465C9002FC593;
+					};
+					559BC81C235465CA002FC593 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 559BC7FB235465C9002FC593;
+					};
+				};
+			};
+			buildConfigurationList = 559BC7F7235465C9002FC593 /* Build configuration list for PBXProject "CareHome" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 559BC7F3235465C9002FC593;
+			productRefGroup = 559BC7FD235465C9002FC593 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 55C7B02125CD6AE500F5C788 /* Products */;
+					ProjectRef = 55C7B02025CD6AE500F5C788 /* ResearchKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				559BC7FB235465C9002FC593 /* CareHome */,
+				559BC811235465CA002FC593 /* CareHomeTests */,
+				559BC81C235465CA002FC593 /* CareHomeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		55C7B02725CD6AE500F5C788 /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = 55C7B02625CD6AE500F5C788 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55C7B02925CD6AE500F5C788 /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = 55C7B02825CD6AE500F5C788 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		559BC7FA235465C9002FC593 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559BC80C235465C9002FC593 /* LaunchScreen.storyboard in Resources */,
+				55821559235468F200C6AB3A /* GoogleService-Info.plist in Resources */,
+				559BC809235465C9002FC593 /* Assets.xcassets in Resources */,
+				559BC807235465C9002FC593 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559BC810235465CA002FC593 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559BC81B235465CA002FC593 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D1D86C89807B6D532858FEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CareHome-CareHomeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FF336F212A0EBD9C693F37C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CareHomeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		940B7A0D2E26E353B0CFFB9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CareHome-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		961D2EF4EC55F77B724FFA23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CareHome-CareHomeUITests/Pods-CareHome-CareHomeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CareHome-CareHomeUITests/Pods-CareHome-CareHomeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CareHome-CareHomeUITests/Pods-CareHome-CareHomeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E314466728C6CDA9749361F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CareHome/Pods-CareHome-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CareHome/Pods-CareHome-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CareHome/Pods-CareHome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		559BC7F8235465C9002FC593 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553CC9962427CDCA007BB544 /* ChooseCompareOpViewController.swift in Sources */,
+				5582155B23546E6A00C6AB3A /* LogInViewController.swift in Sources */,
+				558ADD542402EE4D001E0FEF /* CreatePatientViewController.swift in Sources */,
+				551CE46F23E1EBD00058B313 /* ChangeEmailViewController.swift in Sources */,
+				558637DA23EC416000F6DFB0 /* HomePageViewController.swift in Sources */,
+				558ADD522402E118001E0FEF /* SelectPatientViewController.swift in Sources */,
+				55CD1C0424268E7A0033040C /* ChartViewController.swift in Sources */,
+				55BB19F72433A1F600AF25A8 /* PatientQoLCompareViewController.swift in Sources */,
+				551CE46D23E1E7C60058B313 /* DatabaseManager.swift in Sources */,
+				55BB1A002433BD0000AF25A8 /* ResultsAvgCHViewController.swift in Sources */,
+				5573034D243A4CF400EDB8FB /* AveragePatientQoLScoreViewController.swift in Sources */,
+				559BC800235465C9002FC593 /* AppDelegate.swift in Sources */,
+				55EC39B02457182200A8ECF3 /* HistoryViewController.swift in Sources */,
+				558637E923EC4C4D00F6DFB0 /* SurveyQoL.swift in Sources */,
+				55C1F16D2361FEFC00E62B67 /* RoundedShadowBtn.swift in Sources */,
+				55234AA52475936000FF10D2 /* EditPatientAccountViewController.swift in Sources */,
+				55C0E3322428D85F004BEB8F /* AvgCareHomeOpViewController.swift in Sources */,
+				551CE47323E1F0C20058B313 /* ProfileViewController.swift in Sources */,
+				55234A9E24758A0200FF10D2 /* ManagePatientAccountsViewController.swift in Sources */,
+				55730346243A2F5D00EDB8FB /* ResultsIndPatientQoLScoresViewController.swift in Sources */,
+				5598A4F623FEC0AB0039FAFE /* PVC.swift in Sources */,
+				55730351243A4D7E00EDB8FB /* ResultsAveragePatientScoresViewController.swift in Sources */,
+				559BC802235465C9002FC593 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559BC80E235465CA002FC593 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559BC817235465CA002FC593 /* CareHomeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559BC819235465CA002FC593 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559BC822235465CA002FC593 /* CareHomeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		559BC814235465CA002FC593 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 559BC7FB235465C9002FC593 /* CareHome */;
+			targetProxy = 559BC813235465CA002FC593 /* PBXContainerItemProxy */;
+		};
+		559BC81F235465CA002FC593 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 559BC7FB235465C9002FC593 /* CareHome */;
+			targetProxy = 559BC81E235465CA002FC593 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		559BC805235465C9002FC593 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				559BC806235465C9002FC593 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		559BC80A235465C9002FC593 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				559BC80B235465C9002FC593 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		559BC824235465CA002FC593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		559BC825235465CA002FC593 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		559BC827235465CA002FC593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C70568C40446AF2D61C79B4 /* Pods-CareHome.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CareHome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.careHome.CareHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		559BC828235465CA002FC593 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B7196647BE1824DB37DC050 /* Pods-CareHome.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CareHome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.careHome.CareHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		559BC82A235465CA002FC593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1763D6AC81322C68E1F2EE5 /* Pods-CareHomeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CareHomeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.careHome.CareHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CareHome.app/CareHome";
+			};
+			name = Debug;
+		};
+		559BC82B235465CA002FC593 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77CFE0EE16C7C7CC1454D69F /* Pods-CareHomeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CareHomeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.careHome.CareHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CareHome.app/CareHome";
+			};
+			name = Release;
+		};
+		559BC82D235465CA002FC593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F94B1C51B1602BF2EBEE98B6 /* Pods-CareHome-CareHomeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CareHomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.careHome.CareHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CareHome;
+			};
+			name = Debug;
+		};
+		559BC82E235465CA002FC593 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27E45FF658EC80AF862313CE /* Pods-CareHome-CareHomeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CareHomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.careHome.CareHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CareHome;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		559BC7F7235465C9002FC593 /* Build configuration list for PBXProject "CareHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				559BC824235465CA002FC593 /* Debug */,
+				559BC825235465CA002FC593 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		559BC826235465CA002FC593 /* Build configuration list for PBXNativeTarget "CareHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				559BC827235465CA002FC593 /* Debug */,
+				559BC828235465CA002FC593 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		559BC829235465CA002FC593 /* Build configuration list for PBXNativeTarget "CareHomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				559BC82A235465CA002FC593 /* Debug */,
+				559BC82B235465CA002FC593 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		559BC82C235465CA002FC593 /* Build configuration list for PBXNativeTarget "CareHomeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				559BC82D235465CA002FC593 /* Debug */,
+				559BC82E235465CA002FC593 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 559BC7F4235465C9002FC593 /* Project object */;
+}
