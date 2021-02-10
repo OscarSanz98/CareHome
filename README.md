@@ -1,4 +1,4 @@
-# care home
+# CareHome
 
 > final year project
 
