@@ -1,6 +1,6 @@
 # CareHome
 
-> final year project
+> Final year project
 
 ## Build Setup
 
